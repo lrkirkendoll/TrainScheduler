@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Train Scheduler</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+    
+<body>
+
+    <div class="container">
+
+    
+    <h1>Anytime is Train Time</h1>
+
+    <h2>Choo Choo. Chee Chee.</h2>
+
+    <table class="table">
+            <thead> Current Train Schedule
+              <tr>
+                <th>Train Name</th>
+                <th>Destination</th>
+                <th>Frequency (min)</th>
+                <th>Next Arrival</th>
+                <th>Minutes Aways</th>
+              </tr>
+            </thead>
+          </table>
+    <table class="table">
+            <thead> Add Train
+              <tr>
+                <th>Train Name</th>
+                <th>Destination</th>
+                <th>Frequency (min)</th>
+                <th>Next Arrival</th>
+                <th>Minutes Aways</th>
+              </tr>
+            </thead>
+          </table>
+
+
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/5.5.2/firebase.js"></script>
+    <script>
+    // Initialize Firebase
+    var config = {
+        apiKey: "AIzaSyBpLit4iNvw2-B2PGnCF4n5juUV-VB5PSg",
+        authDomain: "trainsheduler-43bad.firebaseapp.com",
+        databaseURL: "https://trainsheduler-43bad.firebaseio.com",
+        projectId: "trainsheduler-43bad",
+        storageBucket: "trainsheduler-43bad.appspot.com",
+        messagingSenderId: "254942860918"
+    };
+    firebase.initializeApp(config);
+    </script>
+ </body>
+</html>
